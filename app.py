@@ -7,7 +7,7 @@ import os
 load_dotenv()
 
 # Replace with your API Key for OpenWeatherMap
-OPENWEATHER_API_KEY = 'c6306395de5e761ea752f47aebd03267'
+#OPENWEATHER_API_KEY = 'c6306395de5e761ea752f47aebd03267'
 
 # Ensure the API key is available
 if not OPENWEATHER_API_KEY:
