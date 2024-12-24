@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Weather Forecast</h1>
+    <form method="POST">
+        <label for="location">Enter Location:</label>
+        <input type="text" id="location" name="location" required><br><br>
+        
+        <label for="query">Ask About the Weather:</label>
+        <input type="text" id="query" name="query" placeholder="e.g. What will the weather be like tomorrow?" required><br><br>
+        
+        <button type="submit">Get Weather</button>
+    </form>
+    
+    {% if weather_info %}
+        <h2>Weather Information:</h2>
+        <p>{{ weather_info }}</p>
+    {% endif %}
+</body>
+</html>
